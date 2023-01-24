@@ -1,0 +1,79 @@
+/** @format */
+
+@font-face {
+	font-family: Glam;
+	src: url("GlametrixBold.otf");
+	font-weight: bold;
+}
+form {
+	display: flex;
+	justify-content: center;
+	font-family: Glam;
+	font-size: 25px;
+}
+
+body {
+	background: rgb(78, 106, 203);
+	background: linear-gradient(
+		90deg,
+		rgba(78, 106, 203, 1) 42%,
+		rgba(208, 198, 29, 1) 61%
+	);
+}
+
+.hints {
+	display: inline-block;
+	float: right;
+	margin-left: 10px;
+	position: relative;
+}
+h1 {
+	text-align: center;
+	font-family: Glam;
+	font-size: 66px;
+	border: 10px solid black;
+	border-radius: 50px;
+}
+footer {
+	text-align: center;
+}
+
+.badge {
+	width: 500px;
+	height: 300px;
+}
+
+#results {
+	border: 6px solid black;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.marker {
+	margin-left: 10px;
+	width: 15px;
+	height: 15px;
+}
+p {
+	font-family: Glam;
+	font-size: 35px;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 350px repeat(11, 74px);
+	margin: 10px;
+}
+
+.sidebar {
+	grid-column: 1 / span 1;
+	border: 8px solid rgb(0, 0, 0);
+	background-color: rgb(195, 179, 227);
+	font-size: 30px;
+	text-align: center;
+	margin-right: 20px;
+}
+
+.content {
+	grid-column: 2 / span 11;
+}

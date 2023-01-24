@@ -1,0 +1,130 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<script src="js/process_form.js"></script>
+		<title>Survey - Dynie Mesoneuvre</title>
+	</head>
+	<body>
+		<h1>Are You Left or Right-Brained?</h1>
+
+		<div class="container">
+			<div class="sidebar">Real Estate AD</div>
+			<div class="content">
+				<form action="" method="get" id="myform">
+					<fieldset>
+						<legend>Info Form</legend>
+						<br />
+						<div class="hints" id="hintFirst">Enter your First Name</div>
+						<label for="first_name"> First Name: </label>
+						<input
+							type="text"
+							name="first_name"
+							value=""
+							onblur="validateData().firstName()"
+							onfocus="hintFirst()"
+						/>
+						<br />
+						<br />
+						<div class="hints" id="hintLast">Enter your Last Name</div>
+						<label for="last_name"> Last Name: </label>
+						<input
+							type="text"
+							name="last_name"
+							value=""
+							onblur="validateData().lastName()"
+							onfocus="hintLast()"
+						/>
+						<br />
+						<br />
+						<div class="hints" id="hintPhone">Enter your Phone Number</div>
+						<label for="phone_number"> Phone Number: </label>
+						<input
+							type="text"
+							name="phone_number"
+							value=""
+							onblur="validateData().phoneNum()"
+							onfocus="hintPhone()"
+						/>
+						<br />
+						<br />
+						<div class="hints" id="hintEmail">Enter your Email Address</div>
+						<label for="email_address"> Email Address: </label>
+						<input
+							type="text"
+							name="email_address"
+							value=""
+							onblur="validateData().emailValid()"
+							onfocus="hintEmail()"
+						/>
+						<br />
+						<br />
+						<div class="hints" id="hintWeb">Enter your Website URL</div>
+						<label for="website_url"> Website URL : </label>
+						<input
+							type="text"
+							name="website_url"
+							value=""
+							onblur="validateData().webValid()"
+							onfocus="hintWeb()"
+						/>
+						<br />
+						<br />
+					</fieldset>
+				</form>
+				<br />
+				<form action="" method="get" id="myform2">
+					<fieldset>
+						<legend>Survey</legend>
+						<br />
+						<fieldset>
+							<p>
+								Questions One: Would people say you're Analytical or Creative?
+							</p>
+							<br />
+							<input
+								type="radio"
+								id="analytics"
+								name="question_one"
+								value="Analytical"
+							/>
+							<label for="analytics"> Analytical </label>
+							<input
+								type="radio"
+								id="creative"
+								name="question_one"
+								value="Creative"
+							/>
+							<label for="creative"> Creative </label> <br />
+						</fieldset>
+						<br />
+						<fieldset>
+							<p>Questions Two: Do you prefer Math or Reading/Writing</p>
+							<br />
+							<input type="radio" id="math" name="question_two" value="Math" />
+							<label for="math"> Math </label>
+							<input
+								type="radio"
+								id="reading-writing"
+								name="question_two"
+								value="Reading-Writing"
+							/>
+							<label for="reading-writing"> Reading/Writing </label>
+						</fieldset>
+						<br />
+						<input type="submit" name="submit" value="Submit" id="subutton" />
+					</fieldset>
+				</form>
+
+				<div id="results"></div>
+			</div>
+		</div>
+
+		<footer>Created for DIG 3716c by Dynie Mesoneuvre</footer>
+	</body>
+</html>
